@@ -1,0 +1,211 @@
+  /* Custom stylesheet */
+
+  html, body {
+    height: 100%;
+    width: 100%;
+    margin: 0;
+  }
+
+  h1 {
+    font-family: 'Permanent Marker', cursive;
+    font-size: 4em;
+    margin-block-start: 0;
+    margin-block-end: 0;
+    margin-inline-start: 0;
+    margin-inline-end: 0;
+  }
+
+  h2 {
+    font-family: 'Permanent Marker', cursive;
+    font-size: 3.5em;
+    line-height: 1.1em;
+    color: black;
+    margin-block-start: 0;
+    margin-block-end: 0;
+    margin-inline-start: 0;
+    margin-inline-end: 0;
+  }
+
+  p {
+    font-family: 'Rock Salt', cursive;
+    font-size: 1em;
+    line-height: 1.7em;
+    margin-block-start: 0;
+    margin-block-end: 0;
+    margin-inline-start: 0;
+    margin-inline-end: 0;
+  }
+
+  a, u {
+    font-family: 'Rock Salt', cursive;
+    text-decoration: none;
+  }
+
+  /* Header*/
+  /* Header Background*/
+  header {
+    background: url('../IMG/street-lisbon-min.jpg');
+    content: '';
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+    position: relative;
+    width: 100%;
+    height: 100%;
+  }
+
+  /* Header Marvin*/
+  header h1 {
+    color: white;
+    text-shadow: 2px 2px #00757A;
+    position: absolute;
+    left: 7%;
+    top: 9%;
+    font-size: 2em;
+    font-weight: bold;
+    line-height: 2.2em;
+    text-align: left;
+    margin-block-start: 0px;
+    margin-block-end: 0.2em;
+    z-index: 1;
+  }
+
+  /* Header Social*/
+  header div#social {
+    position: absolute;
+    right: 5%;
+    top: 5%;
+    color: white;
+    font-weight: 700;
+    font-size: 20px;
+    z-index: 1;
+  }
+
+  header div#social p {
+    font-family: 'Permanent Marker', cursive;
+    color: white;
+    position: relative;
+    font-size: 20px;
+    font-weight: bold;
+    line-height: 25px;
+    text-align: right;
+    margin-block-start: 0px;
+    margin-block-end: 0.2em;
+  }
+
+  header div#social a {
+    font-family: 'Permanent Marker', cursive;
+    display: inline-block;
+    font-weight: bold;
+  }
+
+  header div#social a span {
+    display: none;
+  }
+
+  header div#social a i {
+    color: white;
+    display: inline;
+    margin-left: 4px;
+    position: relative;
+  }
+
+  header div#social a#twitter-icon i:hover {
+      color: #009AFA;
+  }
+  header div#social a#linkedin-icon i:hover {
+      color: #0072BB;
+  }
+  header div#social a#xing-icon i:hover {
+      color: #007E79;
+  }
+
+  /* Brush for Social Bar*/
+  header div#social img {
+    position: absolute;
+    top: -7px;
+    right: -12px;
+    width: 235px;
+    height: 37px;
+    transform: rotate(-2deg);
+  }
+
+  header div#shout p {
+    position: absolute;
+    right: 7%;
+    bottom: 9%;
+    font-family: 'Permanent Marker', cursive;
+    color: white;
+    text-shadow: 3px 3px #00757A;
+    font-size: 6.5em;
+    line-height: 1.1em;
+    text-align: right;
+    margin-block-start: 0;
+    margin-block-end: 0;
+    z-index: 1;
+  }
+
+  /* Main Section*/
+  main {
+    position: relative;
+    background-color: white;
+  }
+
+  main section h2 {
+    margin-left: 7%;
+    padding-top: 35px;
+    padding-bottom: 15px;
+  }
+
+  main section p {
+    margin: 0% 10%;
+  }
+
+  /* Footer*/
+  footer {
+    margin-top: 35px;
+    margin-bottom: 20px;
+  }
+
+  p#copyright {
+    padding-left: 7%;
+    font-size: 0.5em;
+  }
+
+  /* Media Queries TABLET (only overrides) */
+  @media(max-width: 768px) {
+
+      h2 {
+        font-size: 2.5em;
+      }
+
+    /* Hero Section */
+      header {
+        background-position: 77%;
+      }
+
+      header div#shout p {
+        font-size: 4em;
+      }
+   }
+
+  /* Media Queries MOBILE (only overrides) */
+  @media(max-width: 375px) {
+
+      h2 {
+        font-size: 2em;
+      }
+
+    /* Hero Section*/
+      header {
+        background-position: 58%;
+      }
+
+      header h1 {
+        top: 11%;
+      }
+
+      header div#shout p {
+        font-size: 3em;
+      }
+  }
