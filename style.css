@@ -44,7 +44,7 @@
   /* Header*/
   /* Header Background*/
   header {
-    background: url('../IMG/street-lisbon-min.jpg');
+    background: url('IMG/street-lisbon-min.jpg');
     content: '';
     background-repeat: no-repeat;
     background-position: center center;
