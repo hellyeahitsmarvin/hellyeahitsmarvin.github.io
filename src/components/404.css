@@ -1,0 +1,55 @@
+/* Custom stylesheet */
+
+  header#error {
+    background: url('/src/assets/visuals/ohlala-min.jpg');
+    content: '';
+    background-repeat: no-repeat;
+    background-position: top center;
+    background-size: cover;
+    position: relative;
+    width: 100%;
+    height: 80%;
+    margin-bottom: 30px;
+  }
+
+  header h1#error {
+    color: white;
+    text-shadow: 2px 2px #353B3C;
+    position: absolute;
+    left: 6%;
+    bottom: -15px;
+    font-size: 3.5em;
+    font-weight: bold;
+    line-height: 2.2em;
+    text-align: left;
+    margin-block-start: 0px;
+    z-index: 1;
+  }
+
+  p#error {
+      margin-block-end: 20px;
+      font-weight: 700;
+  }
+
+  a {
+      text-decoration: underline;
+      color: black;
+  }
+
+  /* Media Queries TABLET (only overrides) */
+  @media(max-width: 768px) {
+
+    header#error {
+      height: 55%;
+    }
+
+  }
+
+  /* Media Queries MOBILE (only overrides) */
+  @media(max-width: 375px) {
+
+    header#error {
+      height: 35%;
+    }
+
+  }

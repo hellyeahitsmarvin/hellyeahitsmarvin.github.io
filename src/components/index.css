@@ -16,9 +16,9 @@
   }
 
   h2 {
-    font-family: 'Permanent Marker', cursive;
-    font-size: 3.5em;
-    line-height: 1.1em;
+    font-family: 'Rock Salt', cursive;
+    font-size: 2.5em;
+    line-height: 1.4em;
     color: black;
     margin-block-start: 0;
     margin-block-end: 0;
@@ -26,8 +26,20 @@
     margin-inline-end: 0;
   }
 
-  p {
+  h3 {
     font-family: 'Rock Salt', cursive;
+    font-size: 1.3em;
+    line-height: 1.7em;
+    color: black;
+    margin-block-start: 0;
+    margin-block-end: 0;
+    margin-inline-start: 0;
+    margin-inline-end: 0;
+    margin-left: 16%;
+  }
+
+  p {
+    font-family: 'Quicksand', sans-serif;
     font-size: 1em;
     line-height: 1.7em;
     margin-block-start: 0;
@@ -37,14 +49,14 @@
   }
 
   a, u {
-    font-family: 'Rock Salt', cursive;
+    font-family: 'Quicksand', sans-serif;
     text-decoration: none;
   }
 
   /* Header*/
   /* Header Background*/
   header {
-    background: url('IMG/street-lisbon-min.jpg');
+    background: url('/src/assets/visuals/street-lisbon-min.jpg');
     content: '';
     background-repeat: no-repeat;
     background-position: center center;
@@ -55,7 +67,7 @@
   }
 
   /* Header Marvin*/
-  header h1 {
+  header h1#itsme {
     color: white;
     text-shadow: 2px 2px #00757A;
     position: absolute;
@@ -129,8 +141,8 @@
     height: 37px;
     transform: rotate(-2deg);
   }
-
-  header div#shout p {
+  /* Shout */
+  /*  header div#shout p {
     position: absolute;
     right: 7%;
     bottom: 9%;
@@ -143,6 +155,28 @@
     margin-block-start: 0;
     margin-block-end: 0;
     z-index: 1;
+  } */
+
+  /* Welcome Section*/
+  main section#welcome {
+    position: absolute;
+    width: 80%;
+    height: 230px;
+    margin-top: -230px;
+    margin-left: 10%;
+    border-radius: 5px 5px 0 0;
+    background-color: hsla(0, 0%, 100%, 0.8);
+    overflow-y: hidden;
+  }
+
+  main section#welcome p {
+    margin: 0% 10%;
+  }
+
+  main section#welcome p#signature {
+    font-family: 'Rock Salt', cursive;
+    text-align: center;
+    transform: rotate(-6deg);
   }
 
   /* Main Section*/
@@ -157,8 +191,13 @@
     padding-bottom: 15px;
   }
 
+  main section h3 {
+    padding-top: 25px;
+    padding-bottom: 15px;
+  }
+
   main section p {
-    margin: 0% 10%;
+    margin: 0% 10% 0% 18%;
   }
 
   /* Footer*/
@@ -168,7 +207,8 @@
   }
 
   p#copyright {
-    padding-left: 7%;
+    padding-left: 16%;
+    font-family: 'Rock Salt', cursive;
     font-size: 0.5em;
   }
 
@@ -176,36 +216,88 @@
   @media(max-width: 768px) {
 
       h2 {
-        font-size: 2.5em;
+        font-size: 2em;
       }
 
-    /* Hero Section */
+    /* Header */
       header {
         background-position: 77%;
       }
 
-      header div#shout p {
+      /* header div#shout p {
         font-size: 4em;
+      } */
+
+      header div#social a i {
+        margin-left: 10px;
       }
+
+      header div#social img {
+        position: absolute;
+        top: -7px;
+        right: -12px;
+        width: 255px;
+      }
+
+      main section#welcome {
+        position: absolute;
+        width: 80%;
+        height: 260px;
+        margin-top: -260px;
+      }
+
+      main section p#welcome {
+        margin: 0% 7%;
+      }
+
+      main section p {
+        margin: 0% 10% 0% 18%;
+      }
+
+      main section#welcome p#signature {
+        text-align: right;
+        padding-top: 16px;
+      }
+
    }
+
+   /* Media Queries TABLET HEIGHT (only overrides) */
+   @media(max-height: 600px) {
+
+     /* header div#shout p {
+       font-size: 4em;
+     } */
+
+  }
 
   /* Media Queries MOBILE (only overrides) */
   @media(max-width: 375px) {
 
       h2 {
-        font-size: 2em;
+        font-size: 1.5em;
       }
 
-    /* Hero Section*/
+    /* Header Section*/
       header {
         background-position: 58%;
       }
 
-      header h1 {
+      header h1#itsme {
         top: 11%;
       }
 
-      header div#shout p {
+      /* header div#shout p {
         font-size: 3em;
+      } */
+
+      /* Welcome Section*/
+      main section#welcome {
+        height: 300px;
+        margin-top: -300px;
       }
+
+      main section#welcome p#signature {
+        text-align: right;
+      }
+
   }
