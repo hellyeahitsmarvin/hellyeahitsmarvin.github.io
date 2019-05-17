@@ -1,18 +1,21 @@
   /* Custom stylesheet */
+  *{
+    margin:0;
+    padding:0;
+    margin-block-start: 0;
+    margin-block-end: 0;
+    margin-inline-start: 0;
+    margin-inline-end: 0;
+  }
 
   html, body {
     height: 100%;
     width: 100%;
-    margin: 0;
   }
 
   h1 {
     font-family: 'Permanent Marker', cursive;
     font-size: 4em;
-    margin-block-start: 0;
-    margin-block-end: 0;
-    margin-inline-start: 0;
-    margin-inline-end: 0;
   }
 
   h2 {
@@ -20,10 +23,6 @@
     font-size: 2.5em;
     line-height: 1.4em;
     color: black;
-    margin-block-start: 0;
-    margin-block-end: 0;
-    margin-inline-start: 0;
-    margin-inline-end: 0;
   }
 
   h3 {
@@ -31,10 +30,6 @@
     font-size: 1.3em;
     line-height: 1.7em;
     color: black;
-    margin-block-start: 0;
-    margin-block-end: 0;
-    margin-inline-start: 0;
-    margin-inline-end: 0;
     margin-left: 16%;
   }
 
@@ -42,10 +37,6 @@
     font-family: 'Quicksand', sans-serif;
     font-size: 1em;
     line-height: 1.7em;
-    margin-block-start: 0;
-    margin-block-end: 0;
-    margin-inline-start: 0;
-    margin-inline-end: 0;
   }
 
   a, u {
@@ -56,124 +47,136 @@
   /* Header*/
   /* Header Background*/
   header {
-    background: url('/src/assets/visuals/street-lisbon-min.jpg');
+    background: url('/src/assets/visuals/lisbon-roofs-min.jpg');
     content: '';
     background-repeat: no-repeat;
-    background-position: center center;
+    background-position: bottom center;
     background-size: cover;
     position: relative;
     width: 100%;
     height: 100%;
   }
 
-  /* Header Marvin*/
-  header h1#itsme {
-    color: white;
-    text-shadow: 2px 2px #00757A;
+  div#hero {
+    background-color: yellow;
+    position: relative;
+    width: 75%;
+    height: 55%;
+    float: right;
+    margin-top: 100px;
+    border-bottom: 40px solid;
+    border-color: white;
+    overflow: hidden;
+  }
+
+  img#tree {
     position: absolute;
-    left: 7%;
-    top: 9%;
-    font-size: 2em;
-    font-weight: bold;
-    line-height: 2.2em;
-    text-align: left;
-    margin-block-start: 0px;
-    margin-block-end: 0.2em;
+    bottom: 0px;
+    left: 0;
+    max-height: 95%;
+    max-width: 100%;
     z-index: 1;
+  }
+
+  p#hell {
+    font-family: 'Montserrat', sans-serif;
+    color: #5E5E5E;
+    text-align: left;
+    font-size: 2em;
+    line-height: 1em;
+    white-space: nowrap;
+    position: relative;
+    top: -1%;
+    left: 90%;
+    width: auto;
+    height: auto;
+    transform: rotate(90deg);
+    transform-origin: left top 0;
+  }
+
+  /* Header Marvin*/
+  h1#itsme {
+    color: white;
+    text-shadow: 3px 4px #00757A;
+    position: absolute;
+    left: 5%;
+    top: 58px;
+    font-size: 4em;
+    line-height: 1em;
+    text-align: left;
+    z-index: 2;
   }
 
   /* Header Social*/
-  header div#social {
+  div#social {
     position: absolute;
-    right: 5%;
-    top: 5%;
+    left: 4.5%;
+    top: 495px;
     color: white;
     font-weight: 700;
     font-size: 20px;
-    z-index: 1;
+    white-space: nowrap;
+    z-index: 2;
+    transform-origin: left top 0;
+    transform: rotate(-90deg);
   }
 
-  header div#social p {
+  div#social p {
     font-family: 'Permanent Marker', cursive;
     color: white;
-    position: relative;
-    font-size: 20px;
+    text-shadow: -2px 2px #00757A;
+    font-size: 24px;
     font-weight: bold;
-    line-height: 25px;
-    text-align: right;
-    margin-block-start: 0px;
-    margin-block-end: 0.2em;
   }
 
-  header div#social a {
+  div#social a {
     font-family: 'Permanent Marker', cursive;
+    text-shadow: 2px 2px #00757A;
     display: inline-block;
     font-weight: bold;
+    transform: rotate(90deg);
   }
 
-  header div#social a span {
+  div#social a span {
     display: none;
   }
 
-  header div#social a i {
+  div#social a i {
     color: white;
     display: inline;
     margin-left: 4px;
     position: relative;
   }
 
-  header div#social a#twitter-icon i:hover {
-      color: #009AFA;
+  div#social a#twitter-icon i:hover {
+    color: #009AFA;
+    text-shadow: 2px 2px white;
   }
-  header div#social a#linkedin-icon i:hover {
-      color: #0072BB;
+  div#social a#linkedin-icon i:hover {
+    color: #0072BB;
+    text-shadow: 2px 2px white;
   }
-  header div#social a#xing-icon i:hover {
-      color: #007E79;
+  div#social a#xing-icon i:hover {
+    color: #007E79;
+    text-shadow: 2px 2px white;
   }
-
-  /* Brush for Social Bar*/
-  header div#social img {
-    position: absolute;
-    top: -7px;
-    right: -12px;
-    width: 242px;
-    height: 37px;
-    transform: rotate(-2deg);
-  }
-  /* Shout */
-  /*  header div#shout p {
-    position: absolute;
-    right: 7%;
-    bottom: 9%;
-    font-family: 'Permanent Marker', cursive;
-    color: white;
-    text-shadow: 3px 3px #00757A;
-    font-size: 6.5em;
-    line-height: 1.1em;
-    text-align: right;
-    margin-block-start: 0;
-    margin-block-end: 0;
-    z-index: 1;
-  } */
 
   /* Welcome Section*/
-  main section#welcome {
-    position: absolute;
+  section#welcome {
+    position: relative;
     width: 80%;
     height: 230px;
     margin-top: -230px;
     margin-left: 10%;
-    border-radius: 5px 5px 0 0;
     background-color: hsla(0, 0%, 100%, 0.8);
     overflow-y: hidden;
   }
 
-  main section#welcome p {
+  section#welcome p {
     margin: 0% 10%;
   }
 
-  main section#welcome p#signature {
+  section#welcome p#signature {
     font-family: 'Rock Salt', cursive;
     text-align: center;
     transform: rotate(-6deg);
@@ -213,32 +216,46 @@
   }
 
   /* Media Queries TABLET (only overrides) */
+  @media(min-height: 900px) {
+    p#hell {
+      font-size: 23px;
+    }
+  }
+
+      /* Media Queries TABLET (only overrides) */
   @media(max-width: 768px) {
 
       h2 {
         font-size: 2em;
       }
 
-    /* Header */
+  /* Header */
       header {
         background-position: 77%;
       }
 
-      /* header div#shout p {
-        font-size: 4em;
-      } */
+      div#hero {
+        height: 60%;
+        border-bottom: 30px solid;
+        border-color: white;
+      }
 
-      header div#social a i {
+      p#hell {
+        left: 95%;
+      }
+
+      div#social a i {
         margin-left: 10px;
       }
 
-      header div#social img {
+      div#social img {
         position: absolute;
         top: -7px;
         right: -12px;
         width: 260px;
       }
 
+      /*
       main section#welcome {
         position: absolute;
         width: 80%;
@@ -257,18 +274,9 @@
       main section#welcome p#signature {
         text-align: right;
         padding-top: 16px;
-      }
+      }*/
 
    }
-
-   /* Media Queries TABLET HEIGHT (only overrides) */
-   @media(max-height: 600px) {
-
-     /* header div#shout p {
-       font-size: 4em;
-     } */
-
-  }
 
   /* Media Queries MOBILE (only overrides) */
   @media(max-width: 375px) {
@@ -279,16 +287,23 @@
 
     /* Header Section*/
       header {
-        background-position: 58%;
+        background-position: 64%;
       }
 
-      header h1#itsme {
-        top: 11%;
+      div#hero {
+        height: 56%;
+        border-bottom: 25px solid;
+        border-color: white;
       }
 
-      /* header div#shout p {
+      h1#itsme {
+        top: 20px;
         font-size: 3em;
-      } */
+      }
+
+      p#hell {
+        color: lightgray;
+      }
 
       /* Welcome Section*/
       main section#welcome {
