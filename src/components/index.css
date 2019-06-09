@@ -82,7 +82,7 @@
   div#hero {
     background-color: yellow;
     position: relative;
-    width: 75%;
+    width: 86%;
     height: 60%;
     float: right;
     margin-top: 100px;
@@ -93,7 +93,7 @@
 
   img#tree {
     position: absolute;
-    bottom: 0px;
+    bottom: -25px;
     left: 0;
     max-height: 95%;
     max-width: 100%;
@@ -352,6 +352,7 @@
 
       div#hero {
         height: 56%;
+        width: 74%;
       }
 
       h1#itsme {
@@ -397,7 +398,17 @@
       #education li {
         margin: 15px 0 -5px 0;
       }
+  }
 
+  /* Media Queries MOBILE landscape (only overrides) */
+  @media(max-height: 415px) {
+      #connect {
+        display: none;
+      }
+
+      .scroll {
+        display: none;
+      }
   }
 
   /* Scroll Behavior */
