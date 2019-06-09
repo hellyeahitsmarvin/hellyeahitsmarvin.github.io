@@ -279,7 +279,7 @@
   @media(max-height: 600px) {
     /* Header Social*/
       div#social {
-        bottom: 20%;
+        bottom: 19%;
       }
   }
 
@@ -362,6 +362,11 @@
   /* Header Social*/
       div#social {
         left: 12%;
+      }
+
+      div#social a i {
+        margin-left: 8px;
+        font-size: 19px;
       }
 
       p#hell {
