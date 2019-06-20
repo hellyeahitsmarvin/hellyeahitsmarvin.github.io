@@ -13,43 +13,39 @@
   }
 
   header h1#error {
-    color: white;
-    text-shadow: 2px 2px #353B3C;
-    position: absolute;
-    left: 6%;
-    bottom: -15px;
-    font-size: 3.5em;
-    font-weight: bold;
-    line-height: 2.2em;
-    text-align: left;
-    margin-block-start: 0px;
-    z-index: 1;
-  }
+   position: absolute;
+   left: 15%;
+   bottom: 10px;
+   font-weight: bold;
+ }
 
   p#error {
       margin-block-end: 20px;
       font-weight: 700;
   }
 
-  a {
-      text-decoration: underline;
-      color: black;
-  }
-
   /* Media Queries TABLET (only overrides) */
   @media(max-width: 768px) {
 
     header#error {
-      height: 55%;
+      height: 45%;
+    }
+
+    .footer {
+      position: absolute;
     }
 
   }
 
   /* Media Queries MOBILE (only overrides) */
-  @media(max-width: 375px) {
+  @media(max-width: 415px) {
 
     header#error {
       height: 35%;
     }
+
+    h1#error {
+      left: 10%;
+   }
 
   }

@@ -16,7 +16,7 @@
 
   h1 {
     font-family: 'Permanent Marker', cursive;
-    font-size: 4em;
+    font-size: 3.5em;
     color: white;
   }
 
@@ -47,9 +47,12 @@
     margin: 0 30px;
   }
 
-  a, u {
+  a {
     font-family: 'Quicksand', sans-serif;
-    text-decoration: none;
+    font-size: 1em;
+    line-height: 1.7em;
+    text-decoration: underline;
+    color: black;
   }
 
   ul {
@@ -68,7 +71,7 @@
 
   /* Header*/
   /* Header Background*/
-  header {
+  header#home {
     background: url('/src/assets/visuals/lisbon-roofs-min.jpg');
     content: '';
     background-repeat: no-repeat;
@@ -163,6 +166,7 @@
     display: inline-block;
     font-weight: bold;
     transform: rotate(90deg);
+    text-decoration: none;
   }
 
   div#social a span {
@@ -251,6 +255,16 @@
     margin-top: 50px;
   }
 
+  .footer {
+    position: relative;
+    width: 100%;
+    height: 30px;
+    bottom: 0;
+    background-color: yellow;
+    margin-top: 15px;
+    text-align: center;
+  }
+
   p#copyright {
     text-align: right;
     font-family: 'Rock Salt', cursive;
@@ -259,23 +273,21 @@
     margin: 0;
   }
 
-  .footer {
-    position: relative;
-    width: 100%;
-    height: 30px;
-    bottom: 0;
-    background-color: yellow;
-    margin-top: 15px;
+  footer a {
+    text-decoration: none;
+    font-size: 0.8em;
+    line-height: 2.2em;
   }
 
-  /* Media Queries TABLET (only overrides) */
+
+  /* Media Queries TABLET 900height (only overrides) */
   @media(min-height: 900px) {
     p#hell {
       font-size: 3em;
     }
   }
 
-  /* Media Queries TABLET (only overrides) */
+  /* Media Queries TABLET 600height (only overrides) */
   @media(max-height: 600px) {
     /* Header Social*/
       div#social {
@@ -283,7 +295,7 @@
       }
   }
 
-  /* Media Queries TABLET (only overrides) */
+  /* Media Queries TABLET width (only overrides) */
   @media(max-width: 768px) {
 
       h1#itsme {
@@ -340,6 +352,10 @@
 
   /* Media Queries MOBILE (only overrides) */
   @media(max-width: 415px) {
+
+      h1 {
+        font-size: 3em;
+      }
 
       h2 {
         font-size: 1.5em;
