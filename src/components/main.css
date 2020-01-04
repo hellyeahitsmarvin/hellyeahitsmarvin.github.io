@@ -213,7 +213,7 @@
     padding-bottom: 20px;
   }
 
-  span#signature {
+  span.handwritten {
     font-family: 'Rock Salt', cursive;
     padding: 0px 0px 0px 7px;
     white-space: nowrap;
