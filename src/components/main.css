@@ -270,7 +270,13 @@
     font-size: 0.8em;
     line-height: 2.2em;
   }
+  
+  /* Navigation items */
 
+  .nav-link {
+    padding-top: 40px;
+    font-weight: bold;
+  }
 
   /* Media Queries TABLET 900height (only overrides) */
   @media(min-height: 900px) {

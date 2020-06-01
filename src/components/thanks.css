@@ -1,7 +1,7 @@
 /* Custom stylesheet */
 
 header#thanks {
-  background: url('http://res.cloudinary.com/hellyeahitsmarvin/image/upload/f_auto,q_auto/v1578157000/hellyeahitsmarvin/thanks-min_d1h7lv.jpg');
+  background: url('http://res.cloudinary.com/hellyeahitsmarvin/image/upload/f_auto,q_auto,c_scale/v1578157000/hellyeahitsmarvin/thanks-min_d1h7lv');
   content: '';
   background-repeat: no-repeat;
   background-position: top center;
