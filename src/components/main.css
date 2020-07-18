@@ -240,11 +240,14 @@
     padding: 0 10px 0 0;
     vertical-align: top;
   }
+  
 
   /* Footer*/
   footer {
     margin-top: 50px;
     margin-bottom: 20px;
+    text-align: right;
+    font-size: 1em;
   }
 
   .footer {
@@ -257,13 +260,18 @@
     text-align: center;
   }
 
-  p#copyright {
+  footer ul li {
+    display: inline;
+    list-style: none;
+    margin-left: 40px;
+  }
+
+  /*p#copyright {
     text-align: right;
-    font-family: 'Rock Salt', cursive;
-    font-size: 0.5em;
+    
     padding: 0 5%;
     margin: 0;
-  }
+  }*/
 
   footer a {
     text-decoration: none;
@@ -412,6 +420,10 @@
       #education li {
         margin: 15px 0 -5px 0;
       }
+  }
+
+  footer ul li {
+    margin-left: 10px;
   }
 
   /* Media Queries MOBILE landscape (only overrides) */
