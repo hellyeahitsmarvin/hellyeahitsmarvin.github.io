@@ -1,4 +1,13 @@
   /* Custom stylesheet */
+
+  @font-face {
+    font-family: "Social Icons";
+    src: url("src/assets/fonts/fa-icons.woff2") format("woff2"),
+         url("src/assets/fonts/fa-icons.woff") format("woff"),
+         url("src/assets/fonts/fa-icons.ttf") format("truetype"),;
+  }
+
+
   *{
     margin:0;
     padding:0;
@@ -18,20 +27,20 @@
 
   h1 {
     font-family: 'Permanent Marker', cursive;
-    font-size: 3.5em;
-    color: white;
+    font-size: 2.5em;
+    color: darkseagreen;
   }
 
   h2 {
     font-family: 'Rock Salt', cursive;
-    font-size: 2em;
+    font-size: 1.5em;
     line-height: 1.4em;
     color: black;
   }
 
   h3 {
     font-family: 'Rock Salt', cursive;
-    font-size: 1.4em;
+    font-size: 1.3em;
     line-height: 1.7em;
     color: black;
   }
@@ -84,9 +93,9 @@
   }
 
   div#hero {
-    background-color: #FFF562;
+    background-color: peachpuff;
     position: relative;
-    width: 86%;
+    width: 75%;
     height: 80%;
     float: right;
     margin-top: 100px;
@@ -108,12 +117,14 @@
     filter: "progid:DXImageTransform.Microsoft.Dropshadow(OffX=4, OffY=4, Color='#444')";
   }
 
-  p#hell {
-    font-family: 'Montserrat', sans-serif;
-    color: #5E5E5E;
+  /* p#hell {
+    display: none;
+    font-family: 'Arial Black', sans-serif;
+    color: antiquewhite;
     text-align: left;
     font-size: 2em;
     line-height: 1em;
+    font-weight: bold;
     white-space: nowrap;
     position: relative;
     top: -1%;
@@ -122,13 +133,14 @@
     height: auto;
     transform: rotate(90deg);
     transform-origin: left top 0;
-  }
+  }*/
 
   /* Header Marvin*/
   h1#itsme {
-    color: white;
-    background-color: #00757A;
-    font-size: 4em;
+    color: darkseagreen;
+    background-color: white;
+    border: darkseagreen solid 8px;
+    font-size: 2.5em;
     line-height: 1em;
     text-align: left;
     padding: 0.4em;
@@ -143,9 +155,9 @@
   div#social {
     position: absolute;
     padding: 0 20px 9px;
-    left: 9%;
+    left: 18%;
     top: 500px;
-    background-color: #BAF7FF;
+    background-color: lightblue;
     color: white;
     font-weight: 700;
     font-size: 20px;
@@ -200,7 +212,7 @@
   /* Main Section*/
   main {
     background-color: white;
-    margin: 0 10% 0 25%;
+    margin: 0 20% 0 25%;
   }
 
   main section h2 {
@@ -224,11 +236,9 @@
     }
 
   #portrait {
-    padding: 45px 0 0 25%;
-  }
-
-  #marvin {
-    height: 280px;
+    padding-top: 45px; 
+    margin: auto;
+    display: table;
   }
 
   table {
@@ -245,7 +255,8 @@
   /* Footer*/
   footer {
     margin-top: 50px;
-    margin-bottom: 20px;
+    padding-bottom: 15px;
+    border-bottom: peachpuff solid 10px;
     text-align: right;
     font-size: 1em;
   }
@@ -286,32 +297,21 @@
     font-weight: bold;
   }
 
-  /* Media Queries TABLET 900height (only overrides) */
-  @media(min-height: 900px) {
-    p#hell {
-      font-size: 3em;
-    }
-  }
-
   /* Media Queries TABLET width (only overrides) */
   @media(max-width: 768px) {
 
       h1#itsme {
         top: 30px;
-        font-size: 3em;
+        font-size: 2em;
       }
 
       h2 {
-        font-size: 2em;
+        font-size: 1.5em;
       }
 
   /* Header */
       header {
         background-position: 77%;
-      }
-
-      p#hell {
-        left: 95%;
       }
 
       img#tree {
@@ -322,7 +322,7 @@
       }
 
       div#social {
-        top: 450px;
+        top: 404px;
       }
 
       div#social img {
@@ -334,7 +334,7 @@
 
   /* Main Section*/
       main {
-        margin: 0 5% 0 10%;
+        margin: 0 8% 0 10%;
       }
 
       #education li {
@@ -375,12 +375,13 @@
         top: 20px;
         left: 5%;
         padding: 0.2em;
+        margin-right: 50px;
       }
 
   /* Header Social*/
       div#social {
-        left: 14%;
-        top: 225px;
+        left: 12%;
+        top: 260px;
       }
 
       span#connect {
@@ -393,7 +394,7 @@
       }
 
       p#hell {
-        color: lightgray;
+        display: block;
       }
 
   /* Main Section*/
@@ -402,7 +403,7 @@
       }
 
       #portrait {
-        padding: 30px 0 0 4%;
+        padding-top: 30px;
       }
 
       table {
@@ -430,7 +431,7 @@
   @media(max-height: 415px) {
 
       div#social {
-        top: 265px;
+        top: 248px;
       }
 
       #connect {

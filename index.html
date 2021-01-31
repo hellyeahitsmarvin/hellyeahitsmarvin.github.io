@@ -25,13 +25,16 @@
     <meta property="twitter:image" content="https://res.cloudinary.com/hellyeahitsmarvin/image/upload/f_auto,q_auto,c_scale/v1/hellyeahitsmarvin/marvin-roundportrait-min_l6jvqf">
 
     <!-- Custom CSS -->
-    <link rel="stylesheet" href="/src/components/main.css" type="text/css">
+    <link rel="stylesheet" href="/src/components/main.css" type="text/css" async>
     <!-- Google Fonts -->
-    <link href="https://fonts.googleapis.com/css?family=Permanent+Marker|Quicksand:300,400,700|Rock+Salt|Montserrat:900&display=swap" rel="stylesheet">
-    <!-- FontAwesome / Icons -->
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link rel="preload" href="https://fonts.googleapis.com/css?family=Permanent+Marker|Quicksand:400|Rock+Salt&display=swap" as="font">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Permanent+Marker|Quicksand:400|Rock+Salt&display=swap">
+    <!-- Custom Icons -->
+    <link rel="preload" href="/src/assets/fonts/icons/font/fontello.woff2?18966097" as="font" type="font/woff2" crossorigin>
+    <link rel="stylesheet" href="/src/assets/fonts/icons/css/fontello.css" type="text/css" async>
     <!-- Favicon -->
-    <link rel="shortcut icon" href="/public/favicon/favicon.ico?v=1.1">
+    <link rel="shortcut icon" href="/public/favicon/favicon.ico?v=1.1" defer>
     <!-- Google verification -->
     <meta name="google-site-verification" content="TnV2sETtRbQArSjc-IuNwpA4g14spB58IZD34yugvnk" />
   </head>
@@ -42,14 +45,13 @@
       <!--googleoff: snippet-->
       <div id="social">
         <p><span id="connect">Get in touch.</span>
-          <a href="https://twitter.com/hellyeahitsmarv" id="twitter-icon" target="_blank" rel="noopener" alt="Follow me on Twitter"><i class="fab fa-twitter"></i><span>My Twitter profile</span></a>
-          <a href="https://www.xing.com/profile/Marvin_Burmester" id="xing-icon" target="_blank" rel="noopener" alt="Connect on Xing"><i class="fab fa-xing"></i><span>My Xing profile</span></a>
-          <a href="https://www.linkedin.com/in/marvin-burmester" id="linkedin-icon" target="_blank" rel="noopener" alt="Connect on LinkedIn"><i class="fab fa-linkedin-in"></i><span>My LinkedIn profile</span></a>
+          <a href="https://twitter.com/hellyeahitsmarv" id="twitter-icon" target="_blank" rel="noopener" alt="Follow me on Twitter"><i class="icon-twitter"></i><span>My Twitter profile</span></a>
+          <a href="https://www.xing.com/profile/Marvin_Burmester" id="xing-icon" target="_blank" rel="noopener" alt="Connect on Xing"><i class="icon-xing"></i><span>My Xing profile</span></a>
+          <a href="https://www.linkedin.com/in/marvin-burmester" id="linkedin-icon" target="_blank" rel="noopener" alt="Connect on LinkedIn"><i class="icon-linkedin"></i><span>My LinkedIn profile</span></a>
         </p>
       </div>
       <div id="hero">
-        <img id="tree" src="https://res.cloudinary.com/hellyeahitsmarvin/image/upload/c_scale,f_auto,q_auto,h_900/v1578156995/hellyeahitsmarvin/marvin-on-a-tree-min_v2_jozwhe.png" alt="Marvin on a tree">
-        <p id="hell">H E L L Y E A H H E L L Y E A H H E L L Y E A H<br>HELL YEAH HELL YEAH HELL YEAH<br>H E L L Y E A H H E L L Y E A H H E L L Y E A H<br>HELL YEAH HELL YEAH HELL YEAH<br>H E L L Y E A H H E L L Y E A H H E L L Y E A H<br>HELL YEAH HELL YEAH HELL YEAH<br>H E L L Y E A H H E L L Y E A H H E L L Y E A H</p>
+        <img id="tree" src="https://res.cloudinary.com/hellyeahitsmarvin/image/upload/c_scale,f_auto,q_auto,w_400/v1/hellyeahitsmarvin/marvin-on-a-tree-min_v2_jozwhe" alt="Marvin on a tree">
       </div>
       <!--googleon: snippet-->
     </header>
@@ -67,7 +69,7 @@
         </section>
 
         <div id="portrait">
-          <img id="marvin" src="https://res.cloudinary.com/hellyeahitsmarvin/image/upload/c_scale,f_auto,h_280,q_auto/v1578156999/hellyeahitsmarvin/marvin-roundportrait-min_l6jvqf.jpg" alt="Portrait of Marvin">
+          <img id="marvin" src="https://res.cloudinary.com/hellyeahitsmarvin/image/upload/c_scale,f_auto,h_280,q_auto/v1578156999/hellyeahitsmarvin/marvin-roundportrait-min_l6jvqf" alt="Portrait of Marvin" width="280" height="280">
         </div>
 
         <section id="checkit">
