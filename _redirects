@@ -1,0 +1,10 @@
+# hellyeahitsmarvin.com/product-detox
+# hellyeahitsmarvin.com/blog
+
+/blog https://product-detox.netlify.app/product-detox/ 200!
+/blog/ https://product-detox.netlify.app/product-detox/ 200!
+/blog/* https://product-detox.netlify.app/product-detox/:splat 200!
+
+/product-detox https://product-detox.netlify.app/product-detox/ 200!
+/product-detox/ https://product-detox.netlify.app/product-detox/ 200!
+/product-detox/* https://product-detox.netlify.app/product-detox/:splat 200!
