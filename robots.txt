@@ -1,0 +1,9 @@
+# Legal sites
+User-agent: *
+Disallow: /imprint.html
+Disallow: /privacy.html
+
+# Images
+User-agent: *
+Allow: https://res.cloudinary.com/*/marvin-roundportrait-min_l6jvqf
+Disallow: https://res.cloudinary.com/*
