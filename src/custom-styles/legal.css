@@ -1,42 +1,42 @@
 /* Custom stylesheet */
 
-h1.legal {
+.legal h1 {
   padding: 50px 0 20px 0;
   font-family: 'Rock Salt', cursive;
   font-size: 2.5em;
 }
 
-h2, h3, h4 {
+.legal h2, .legal h3, .legal h4 {
   font-family: 'Quicksand', sans-serif;
   font-weight: bold;
 }
 
-h2 {
+.legal h2 {
   font-size: 1.3em;
   line-height: 1.7em;
   padding-top: 6px;
 }
 
-h3 {
+.legal h3 {
   font-size: 1.1em;
   line-height: 1.7em;
   padding-top: 6px;
 }
 
-h4 {
+.legal h4 {
   font-size: 1em;
   line-height: 1.7em;
   padding: 0;
 }
 
-p {
+.legal p {
   padding: 6px 0 12px 0;
 }
 
   /* Media Queries MOBILE (only overrides) */
   @media(max-width: 415px) {
 
-    h1.legal {
+    .legal h1 {
       left: 10%;
       font-size: 2.3em;
    }
