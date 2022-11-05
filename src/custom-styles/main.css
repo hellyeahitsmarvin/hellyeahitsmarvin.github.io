@@ -343,7 +343,7 @@ header {
 }
 
 img#tree {
-  -webkit-filter: drop-shadow(10px 8px 14px peachpuff);
+  -webkit-filter: drop-shadow(10px 8px 22px peachpuff);
   -ms-filter: "progid:DXImageTransform.Microsoft.Dropshadow(OffX=10, OffY=8, rgb(255, 218, 185)";
   filter: "progid:DXImageTransform.Microsoft.Dropshadow(OffX=10, OffY=8, rgb(255, 218, 185)";
 }
