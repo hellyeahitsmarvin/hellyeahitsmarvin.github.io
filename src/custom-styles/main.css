@@ -147,7 +147,7 @@ img#tree {
   max-height: 95%;
   max-width: 100%;
   z-index: 1;
-  -webkit-filter: drop-shadow(15px 10px 10px peachpuff); 
+  -webkit-filter: drop-shadow(15px 10px 17px peachpuff); 
   -ms-filter: "progid:DXImageTransform.Microsoft.Dropshadow(OffX=15, OffY=10, Color='rgb(255, 218, 185)")";
   filter: "progid:DXImageTransform.Microsoft.Dropshadow(OffX=15, OffY=10, Color='rgb(255, 218, 185)")";
 }
@@ -343,7 +343,7 @@ header {
 }
 
 img#tree {
-  -webkit-filter: drop-shadow(10px 8px 8px peachpuff);
+  -webkit-filter: drop-shadow(10px 8px 14px peachpuff);
   -ms-filter: "progid:DXImageTransform.Microsoft.Dropshadow(OffX=10, OffY=8, rgb(255, 218, 185)";
   filter: "progid:DXImageTransform.Microsoft.Dropshadow(OffX=10, OffY=8, rgb(255, 218, 185)";
 }
