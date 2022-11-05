@@ -1,12 +1,41 @@
   /* Custom stylesheet */
 
   @font-face {
+    font-family: "Quicksand";
+    src: url("../assets/fonts/quicksand-variablefont_wght-webfont.woff2") format("woff2"),
+         url("../assets/fonts/quicksand-variablefont_wght-webfont.woff") format("woff"),
+         url("../assets/fonts/quicksand-variablefont_wght-webfont.otf") format("opentype"),
+         url("../assets/fonts/quicksand-variablefont_wght-webfont.ttf") format("truetype");
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "Permanent Marker";
+    src: url("../assets/fonts/permanentmarker-regular-webfont.woff2") format("woff2"),
+         url("../assets/fonts/permanentmarker-regular-webfont.woff") format("woff"),
+         url("../assets/fonts/permanentmarker-regular-webfont.otf") format("opentype"),
+         url("../assets/fonts/permanentmarker-regular-webfont.ttf") format("truetype");
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "Rock Salt";
+    src: url("../assets/fonts/rocksalt-regular-webfont.woff2") format("woff2"),
+         url("../assets/fonts/rocksalt-regular-webfont.woff") format("woff"),
+         url("../assets/fonts/rocksalt-regular-webfont.otf") format("opentype"),
+         url("../assets/fonts/rocksalt-regular-webfont.ttf") format("ttf");
+    font-weight: normal;
+    font-style: normal;
+}
+
+  @font-face {
     font-family: "Social Icons";
     src: url("src/assets/fonts/fa-icons.woff2") format("woff2"),
          url("src/assets/fonts/fa-icons.woff") format("woff"),
          url("src/assets/fonts/fa-icons.ttf") format("truetype"),;
   }
-
 
   *{
     margin:0;
@@ -26,9 +55,10 @@
   }
 
   h1 {
-    font-family: 'Permanent Marker', cursive;
+    font-family: 'Rock Salt', cursive;
     font-size: 2.5em;
-    color: darkseagreen;
+    line-height: 1.5em;
+    color: black;
   }
 
   h2 {
@@ -48,7 +78,7 @@
   table {
     font-family: 'Quicksand', sans-serif;
     font-size: 1em;
-    line-height: 1.7em;
+    line-height: 1.5em;
   }
 
   p {
@@ -79,6 +109,10 @@
     margin: 0 30px 5px 0;
   }
 
+  li {
+    padding-bottom: 10px;
+  }
+
 
   /* Header*/
   /* Header Background*/
@@ -93,7 +127,7 @@
   }
 
   div#hero {
-    background-color: peachpuff;
+    background-color: honeydew;
     position: relative;
     width: 75%;
     height: 80%;
@@ -111,10 +145,9 @@
     max-height: 95%;
     max-width: 100%;
     z-index: 1;
-    -webkit-filter: drop-shadow(4px 4px 4px rgba(0,0,0,0.5));
-    filter: url("data:image/svg+xml;utf8,<svg height='0' xmlns='http://www.w3.org/2000/svg'><filter id='drop-shadow'><feGaussianBlur in='SourceAlpha' stdDeviation='4'/><feOffset dx='4' dy='4' result='offsetblur'/><feFlood flood-color='rgba(0,0,0,0.5)'/><feComposite in2='offsetblur' operator='in'/><feMerge><feMergeNode/><feMergeNode in='SourceGraphic'/></feMerge></filter></svg>#drop-shadow");
-    -ms-filter: "progid:DXImageTransform.Microsoft.Dropshadow(OffX=4, OffY=4, Color='#444')";
-    filter: "progid:DXImageTransform.Microsoft.Dropshadow(OffX=4, OffY=4, Color='#444')";
+    -webkit-filter: drop-shadow(15px 10px 10px peachpuff); 
+    -ms-filter: "progid:DXImageTransform.Microsoft.Dropshadow(OffX=15, OffY=10, Color='rgb(255, 218, 185)")";
+    filter: "progid:DXImageTransform.Microsoft.Dropshadow(OffX=15, OffY=10, Color='rgb(255, 218, 185)")";
   }
 
   /* p#hell {
@@ -137,17 +170,11 @@
 
   /* Header Marvin*/
   h1#itsme {
-    color: darkseagreen;
-    background-color: white;
-    border: darkseagreen solid 8px;
-    font-size: 2.5em;
-    line-height: 1em;
+    line-height: 1.4em;
     text-align: left;
-    padding: 0.4em;
     position: absolute;
-    left: 5%;
-    margin-right: 5%;
-    top: 58px;
+    left: 15%;
+    top: 60px;
     z-index: 2;
   }
 
@@ -247,10 +274,9 @@
   }
 
   td {
-    padding: 0 10px 0 0;
+    padding: 0 10px 10px 0;
     vertical-align: top;
   }
-  
 
   /* Footer*/
   footer {
@@ -315,10 +341,9 @@
       }
 
       img#tree {
-        -webkit-filter: drop-shadow(2px 2px 2px rgba(0,0,0,0.5));
-        filter: url("data:image/svg+xml;utf8,<svg height='0' xmlns='http://www.w3.org/2000/svg'><filter id='drop-shadow'><feGaussianBlur in='SourceAlpha' stdDeviation='4'/><feOffset dx='2' dy='2' result='offsetblur'/><feFlood flood-color='rgba(0,0,0,0.5)'/><feComposite in2='offsetblur' operator='in'/><feMerge><feMergeNode/><feMergeNode in='SourceGraphic'/></feMerge></filter></svg>#drop-shadow");
-        -ms-filter: "progid:DXImageTransform.Microsoft.Dropshadow(OffX=2, OffY=2, Color='#444')";
-        filter: "progid:DXImageTransform.Microsoft.Dropshadow(OffX=2, OffY=2, Color='#444')";
+        -webkit-filter: drop-shadow(10px 8px 8px peachpuff);
+        -ms-filter: "progid:DXImageTransform.Microsoft.Dropshadow(OffX=10, OffY=8, rgb(255, 218, 185)";
+        filter: "progid:DXImageTransform.Microsoft.Dropshadow(OffX=10, OffY=8, rgb(255, 218, 185)";
       }
 
       div#social {
@@ -337,9 +362,6 @@
         margin: 0 8% 0 10%;
       }
 
-      #education li {
-        margin: 5px 0 -5px 0;
-      }
 
   /* Footer*/
       p#copyright {
@@ -407,19 +429,11 @@
       }
 
       table {
-        margin: 15px 25px 0px 10px;
-      }
-
-      td {
-        padding: 0px 10px 0 0;
+        margin: 10px 25px 0px 10px;
       }
 
       ul {
-        margin: 15px 25px 0px 10px;
-      }
-
-      #education li {
-        margin: 15px 0 -5px 0;
+        margin: 10px 25px 0px 10px;
       }
   }
 
