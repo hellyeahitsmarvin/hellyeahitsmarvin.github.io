@@ -170,4 +170,13 @@ footer ul li {
     padding: 0 8px 12px 0;
   }
 
+  .hide {
+    display: none;
+  }
+
+  html:not([data-scroll='0']) {
+    #social-bar {
+      padding-bottom: 15px;
+    }
+
 }
