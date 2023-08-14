@@ -34,30 +34,6 @@
     <!-- Google verification -->
     <meta name="google-site-verification" content="TnV2sETtRbQArSjc-IuNwpA4g14spB58IZD34yugvnk" />
     <meta name="robots" content="noimageindex"/>
-
-    <script>
-      const debounce = (fn) => {
-      let frame;
-      return (...params) => {
-        if (frame) { 
-          cancelAnimationFrame(frame);
-        }
-
-        frame = requestAnimationFrame(() => {
-          fn(...params);
-        });
-      } 
-      };
-
-      const storeScroll = () => {
-      document.documentElement.dataset.scroll = window.scrollY;
-      }
-
-      document.addEventListener('scroll', debounce(storeScroll), { passive: true });
-
-      storeScroll();
-    </script>
-    
   </head>
 
   <body>
