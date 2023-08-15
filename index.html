@@ -34,6 +34,26 @@
     <!-- Google verification -->
     <meta name="google-site-verification" content="TnV2sETtRbQArSjc-IuNwpA4g14spB58IZD34yugvnk" />
     <meta name="robots" content="noimageindex"/>
+
+    <script>
+      const debounce = (fn) => {
+      let frame;
+      return (...params) => {
+        if (frame) { 
+          cancelAnimationFrame(frame);
+        }
+        frame = requestAnimationFrame(() => { 
+          fn(...params);
+        });
+      } 
+      };
+
+      const storeScroll = () => {
+      document.documentElement.dataset.scroll = window.scrollY;
+      }
+      document.addEventListener('scroll', debounce(storeScroll), { passive: true });
+      storeScroll();
+    </script>
   </head>
 
   <body>
@@ -48,13 +68,15 @@
         <section id="pitch">
           <h2>Pride & joy</h2>
           <p>Between creativity, technology and business is where my talents and interests are. Within and beyond nine-to-five.
-            <br>It's a crazy space to work with, but it just keeps on creating those captivating challenges, surprising opportunities and rewarding moments.
+            <br>It's a crazy space to work within, but it just keeps on creating those captivating challenges, surprising opportunities and rewarding moments of shared accomplishments.
             <br>In short : it's a hell of a job!
           </p>
         </section>
 
         <section id="experience">
           <h2>Experience – <span style="white-space: nowrap;">All these &</span> <span style="white-space: nowrap;">selling Happy Meals</span></h2>
+          <p>I now work as a freelance product strategist.
+            <br>These are the jobs that shaped my path before:</p>
           <table id="experience">
             <tr>
               <td>Digital Strategy</td>
@@ -109,16 +131,6 @@
         </section>
     </main>
 
-    <div id="social-bar">
-      <ul>
-        <li>
-          Get in touch via <a href="https://www.linkedin.com/in/marvin-burmester" target="_blank" rel="noopener" alt="Connect on LinkedIn">LinkedIn<span style="display:none;">My LinkedIn profile</span></a> 
-          or <span class="hide">drop me a</span>
-          <a href="mailto:hello@techmeetsbusiness.com" alt="Send an eMail">mail</a>
-        </li>
-      </ul>
-    </div>
-
     <footer>
       <ul>
         <a href="/imprint.html"><li>Imprint</li></a>
@@ -126,6 +138,14 @@
         <span style="font-size: 0.6em;"><li>&copy;2023</li></span>
       </ul>
     </footer>
+  
+    <nav id="social-bar">
+      <p>
+          Get in touch via <a href="https://www.linkedin.com/in/marvin-burmester" target="_blank" rel="noopener" alt="Connect on LinkedIn">LinkedIn<span style="display:none;">My LinkedIn profile</span></a> 
+          or <span class="hide">drop me a</span>
+          <a href="mailto:hello@techmeetsbusiness.com" alt="Send an eMail">mail</a>
+      </p>
+    </nav>
 
   <!-- Cabin Analytics -->
   <script async defer src="https://scripts.withcabin.com/hello.js"></script>
