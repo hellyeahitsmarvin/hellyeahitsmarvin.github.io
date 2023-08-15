@@ -52,7 +52,8 @@ main {
 }
 
 #social-bar {
-  position:sticky;
+  position: sticky;
+  position: -webkit-sticky;
   bottom: 0;
   left: 0;
   padding: 10px 0 10px 20px;
@@ -171,7 +172,7 @@ footer ul li {
   }
 
   #social-bar {
-    padding-bottom: 15px;
+    padding: 5px 0 15px 20px;
   }
 
   .hide {
